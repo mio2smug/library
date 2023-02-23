@@ -10,6 +10,8 @@ console.log('Hello')
 //   isRead: false,
 // }
 
+let myLibrary = []
+
 // constructor
 function newBook(title, author, pages, isRead) {
   this.title = title
@@ -23,3 +25,5 @@ function newBook(title, author, pages, isRead) {
 
 const book1 = new newBook('Grapes of Wrath', 'John Steinbeck', 464, true)
 console.log(book1.bookInfo())
+myLibrary.push(book1)
+console.log(myLibrary)

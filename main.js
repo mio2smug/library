@@ -14,8 +14,12 @@ function newBook(title, author, pages, isRead){
 	this.title = title
 	this.author = author
 	this.pages = pages
-	this isRead = isRead
+	this.isRead = isRead
+	this.bookInfo = function(){
+		console.log(title, author, pages, isRead )
+	}
 }
 
 
 let book1 = new newBook('Grapes of Wrath', 'John Steinbeck', 464, true)
+console.log(book1.bookInfo());

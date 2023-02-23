@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable semi */
 console.log('Hello')
 
@@ -20,6 +21,5 @@ function newBook(title, author, pages, isRead) {
   }
 }
 
-
-const book1 = new book = newBook('Grapes of Wrath', 'John Steinbeck', 464, true)
-console.log(book1.bookInfo());
+const book1 = new newBook('Grapes of Wrath', 'John Steinbeck', 464, true)
+console.log(book1.bookInfo())

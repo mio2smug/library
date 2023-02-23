@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 /* eslint-disable semi */
-console.log('Hello')
 
 // book object
 // const books = {
@@ -9,6 +8,12 @@ console.log('Hello')
 //   pages: 0,
 //   isRead: false,
 // }
+
+//  HTML constants
+const bookTitle = document.getElementById('book--title');
+const bookAuthor = document.getElementById('book--author')
+const bookPages = document.getElementById('book--pages')
+const hasRead = document.getElementById('has--read')
 
 let myLibrary = []
 
@@ -24,6 +29,8 @@ function newBook(title, author, pages, isRead) {
 }
 
 const book1 = new newBook('Grapes of Wrath', 'John Steinbeck', 464, true)
+const book2 = new newBook('Capital Vol.1', 'Karl Marx', 30, false)
+bookTitle.textContent = 'Whats up?';
 console.log(book1.bookInfo())
-myLibrary.push(book1)
+myLibrary.push(book1, book2)
 console.log(myLibrary)

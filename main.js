@@ -31,7 +31,11 @@ function newBook(title, author, pages, isRead) {
 
 const book1 = new newBook('Grapes of Wrath', 'John Steinbeck', 464, true)
 const book2 = new newBook('Capital Vol.1', 'Karl Marx', 30, false)
-bookTitle.textContent = `${book1.title} ${book2.title}`
+bookTitle.textContent = `${book1.title}`
+bookAuthor.textContent = `${book1.author}`
+bookPages.textContent = `${book1.pages}`
+hasRead.textContent = `${book1.isRead}`
+
 console.log(book1.bookInfo())
 myLibrary.push(book1, book2)
 console.log(myLibrary)

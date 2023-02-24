@@ -8,17 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="test--container">
-        <p class="dummy--text">
+    <div class="wrapper">
+        <div class="test--container">
+            <p class="dummy--text">
+                <h1 id="book--title">Title</h1>
+                <h4 id="book--author">Author</h4>
+                <h4 id="book--pages">Pages</h4>
+                <h4 id="has--read">True or False</h4>
+            </p>
+        </div>
+        <div class="test--container">
             <h1 id="book--title">Title</h1>
             <h4 id="book--author">Author</h4>
             <h4 id="book--pages">Pages</h4>
             <h4 id="has--read">True or False</h4>
-        </p>
+        </div>
+        <div class="test--container">
+            <h1 id="book--title">Title</h1>
+                <h4 id="book--author">Author</h4>
+                <h4 id="book--pages">Pages</h4>
+                <h4 id="has--read">True or False</h4>
+        </div>
     </div>
-    
-    <script src="main.js">
-        
-    </script>
+    <div class="button">
+        <button id="myButton">Add new book</button>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <label for="title--input">Book title:</label>
+            <input type=text id="title--input"> <br>
+            <label for="author--input">Author name:</label>
+            <input type="text" id="author--input"> <br>
+            <label for="pages--input">Pages in book:</label>
+            <input type="number" id="pages--input"> <br>
+            <label for="been-read">Finished book?</label>
+            <input type="text" id="been-read">
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

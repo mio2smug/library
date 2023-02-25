@@ -15,7 +15,16 @@ html, body{
         align-items: center;
     }
 
+    .modal--button{
+        margin-left: 3em;
+        padding-bottom: 1em ;
+        display: flex;
+        flex-wrap: row;
+        align-items: flex-end;
+
+    }
 
 .content{
     height: 85%;
+    border: 1px solid black;
 }

@@ -14,6 +14,9 @@ const bookTitle = document.getElementById('book--title');
 const bookAuthor = document.getElementById('book--author')
 const bookPages = document.getElementById('book--pages')
 const hasRead = document.getElementById('has--read')
+const modal = document.getElementById('myModal')
+const myButtonModal = document.getElementById('myButton')
+const myVar = document.getElementById('close')
 
 //  User library held
 const myLibrary = []

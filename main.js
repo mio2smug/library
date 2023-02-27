@@ -29,10 +29,20 @@ span.onclick = function () {
 buttonSubmit.onclick = function () {
   addBookToLibrary();
   clearModal();
-  modal.style.display = 'none';
+  display();
   // console.log(myLibrary[tempVar])
   // tempVar++
 };
+
+function display(){
+  let myBookcase = document.getElementById('my--content--container');
+  let cover = document.createElement('div');
+
+  for(let i = 0; i < myLibrary.length; i++){
+    cover.innerHTML = `<h1>${myLibrary[0].title}</h1>`;
+    myBookcase.appendChild(cover);
+  }
+}
 
 function addBookToLibrary() {
   let title = document.getElementById('book--title').value
@@ -40,14 +50,15 @@ function addBookToLibrary() {
   let pages = document.getElementById('pages').value
   let checkbox = document.getElementById('isRead').checked
   let newbook = new book(title, author, pages, checkbox)
-  myLibrary.push(newbook)
+  myLibrary.push(newbook);
 }
 
-function clearModal(){
+function clearModal() {
   document.getElementById('book--title').value = ''
   document.getElementById('author--name').value = ''
   document.getElementById('pages').value = ''
   document.getElementById('isRead').checked = false
+  modal.style.display = 'none';
 }
 // window.onclick = function(e) {
 //   if (e.target == modal) {

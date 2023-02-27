@@ -24,9 +24,14 @@ span.onclick = function () {
   modal.style.display = 'none';
 };
 
+// var tempVar = 0
+
 buttonSubmit.onclick = function () {
   addBookToLibrary();
+  clearModal();
   modal.style.display = 'none';
+  // console.log(myLibrary[tempVar])
+  // tempVar++
 };
 
 function addBookToLibrary() {
@@ -36,6 +41,13 @@ function addBookToLibrary() {
   let checkbox = document.getElementById('isRead').checked
   let newbook = new book(title, author, pages, checkbox)
   myLibrary.push(newbook)
+}
+
+function clearModal(){
+  document.getElementById('book--title').value = ''
+  document.getElementById('author--name').value = ''
+  document.getElementById('pages').value = ''
+  document.getElementById('isRead').checked = false
 }
 // window.onclick = function(e) {
 //   if (e.target == modal) {

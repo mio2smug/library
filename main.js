@@ -37,11 +37,21 @@ buttonSubmit.onclick = function () {
 function display(){
   let myBookcase = document.getElementById('my--content--container');
   let cover = document.createElement('div');
-
   for(let i = 0; i < myLibrary.length; i++){
-    cover.innerHTML = `<h1>${myLibrary[0].title}</h1>`;
+    cover.innerHTML = 
+    ` <h1> ${myLibrary[i].title} </h1>
+      <h1> ${myLibrary[i].author} </h1> 
+      <h1> ${myLibrary[i].pages} </h1>
+      <h1> ${myLibrary[i].bool} </h1>
+      <button onclick="remove(${i})"> Remove </button>`;
     myBookcase.appendChild(cover);
+    console.log(i)
   }
+}
+
+function remove(i) {
+  myLibrary.splice(i, 1);
+  display();
 }
 
 function addBookToLibrary() {
@@ -60,8 +70,3 @@ function clearModal() {
   document.getElementById('isRead').checked = false
   modal.style.display = 'none';
 }
-// window.onclick = function(e) {
-//   if (e.target == modal) {
-//     modal.style.display = 'none';
-//   }
-// };

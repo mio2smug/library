@@ -52,7 +52,7 @@ html, body{
             width: fit-content;
             height: fit-content;
             position: absolute;
-            /* display: none; */
+             display: none; 
             left: 44%;
             top: 45%;
             /* grid-area: 3/3/8/8; */

@@ -49,14 +49,30 @@ html, body{
             }
 
         .modal{
+            width: fit-content;
+            height: fit-content;
             position: absolute;
-            display: none;
+            /* display: none; */
             left: 44%;
             top: 45%;
             /* grid-area: 3/3/8/8; */
             z-index: 1;
             background-color: aliceblue;
         }
+
+            .modal--content{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+            }
+
+                .div--form--wrapper{
+                    margin: 2em;
+                }
+
+                    input{
+                        margin-top: 5px ;
+                    }
 
             .close{
                 color: #aaa;
@@ -70,3 +86,9 @@ html, body{
                     color: black;
                     cursor: pointer;
                 }
+        
+        .div--button--wrapper{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1em;
+        }

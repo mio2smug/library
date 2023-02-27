@@ -29,8 +29,25 @@
 
             <div id="myModal" class="modal">
                 <div class="modal--content">
-                    <span id="mySpan" class="close">&times;</span>
-                    <p>some text</p>
+                    <div class="div--wrap--container">
+                        <span id="mySpan" class="close">&times;</span>
+                    </div>
+                    <div class="div--form--wrapper">    
+                        <form action="#" method="post">
+
+                            <label for="book--title">Book Title:</label><br>
+                            <input type="text" id="book--title" name="book--title"><br>
+                            <label for="author--name">Author Name:</label><br>
+                            <input type="text" id="author--name" name="author--name"><br>
+                            <label for="pages"># Of Pages:</label><br>
+                            <input type="text" id="pages" name="pages"><br>
+                            <label for="isRead">Have you finished this book?</label><br>
+                            <input type="checkbox" id="isRead" name="isRead">
+                        </form>
+                    </div>
+                    <div class="div--button--wrapper">
+                        <button type="submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
